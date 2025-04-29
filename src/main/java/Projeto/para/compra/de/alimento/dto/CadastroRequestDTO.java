@@ -1,5 +1,6 @@
 package Projeto.para.compra.de.alimento.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -15,10 +16,8 @@ public class CadastroRequestDTO {
     private  String email;
     private  String telefone;
     private  String cpf;
-<<<<<<< HEAD
-//    private LocalDate dataDeNascimento;
-=======
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd.MM.yyyy")
     private LocalDate dataDeNascimento;
->>>>>>> 8dbe713f0e61788864eb93283b55a9b916270916
+
 
 }

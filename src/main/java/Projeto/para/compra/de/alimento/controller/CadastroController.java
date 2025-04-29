@@ -10,31 +10,24 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/cadastro")
 @AllArgsConstructor
-<<<<<<< HEAD
-@CrossOrigin(origins = "http://localhost:56335")
-=======
->>>>>>> 8dbe713f0e61788864eb93283b55a9b916270916
+
+@CrossOrigin(origins = "http://localhost:57544")
+
 public class CadastroController {
     private final CadastroRepository cadastroRepository;
     @GetMapping
     public List <Cadastro> list() {
         return cadastroRepository.findAll();
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 8dbe713f0e61788864eb93283b55a9b916270916
   @PostMapping("/add")
   public Cadastro addCadastro (@RequestBody Cadastro cadastro) {
+
         return cadastroRepository.save(cadastro);
   }
 
     @PutMapping("/update")
     public Cadastro updateCadastro(@RequestBody Cadastro cadastro){
-<<<<<<< HEAD
-
-=======
->>>>>>> 8dbe713f0e61788864eb93283b55a9b916270916
         return cadastroRepository.save(cadastro);
     }
 
