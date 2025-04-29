@@ -25,8 +25,13 @@ public class Cadastro {
     private String telefone;
     @Column
     private String cpf;
+<<<<<<< HEAD
 //    @Column(name="data_de_nascimento")
 //    private LocalDate dataDeNascimento;
+=======
+    @Column(name="data_de_nascimento")
+    private LocalDate dataDeNascimento;
+>>>>>>> 8dbe713f0e61788864eb93283b55a9b916270916
 
 
 }
