@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/cadastro")
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:53678")
+@CrossOrigin(origins = "http://localhost:56335")
 public class CadastroController {
     private final CadastroRepository cadastroRepository;
     @GetMapping

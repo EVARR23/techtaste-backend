@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:53678") // coloque a porta que seu Flutter usa
+                        .allowedOrigins("http://localhost:56335") // coloque a porta que seu Flutter usa
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
